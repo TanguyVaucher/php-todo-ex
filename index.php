@@ -28,7 +28,7 @@ if (isset($_POST['action'])) {
 
       $title = $_POST['title'];
       if ($title && $title !== '') {
-        $insert = $db->prepare('INSERT INTO todo VALUES (:title)');
+        $insert = $db->prepare('INSERT INTO todo (title) VALUES (:title)');
         $insert->bindParam('title', $title);
         if (!$insert->execute()) {
           die(print_r($db->errorInfo(), true));
