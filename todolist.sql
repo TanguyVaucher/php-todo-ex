@@ -2,9 +2,9 @@ CREATE DATABASE IF NOT EXISTS todolist;
 
 -- Some older versions of MySQL might require you to add "WITH
 -- mysql_native_password" between "IDENTIFIED" and "BY" in the following query.
-CREATE USER IF NOT EXISTS 'todolist' @'localhost' IDENTIFIED BY 'iLVGCu63k7JmQ0b9';
+CREATE USER IF NOT EXISTS 'todolist'@'127.0.0.1' IDENTIFIED BY 'ArchiDep2025#+TVR';
 
-GRANT ALL PRIVILEGES ON todolist.* TO 'todolist' @'localhost';
+GRANT ALL PRIVILEGES ON todolist.* TO 'todolist' @'127.0.0.1';
 
 USE todolist;
 
